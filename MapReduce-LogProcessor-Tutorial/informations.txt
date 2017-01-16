@@ -1,0 +1,18 @@
+############## INFORMATIONS ###############
+
+In this mapper only application, we will create a mapper which reads the lines from an input file, 
+each line contains the id of the pages visited on the website separated by space. 
+Each line is split and total number of pages are counted in that line. 
+If they are more than 500, those lines are written to the context.
+This is not a big use case but sufficient to clarify how mappers work.
+
+
+-- DATASET --
+Dataset used for this example is available on the UCI Machine Learning Repository: 
+http://archive.ics.uci.edu/ml/datasets/MSNBC.com+Anonymous+Web+Data
+The dataset describes the page visits of users who visited msnbc.com on September 28, 1999. 
+Visits are recorded at the level of URL category and are recorded in time order. 
+Each single line contains the pages/urls visited in one session by the user. 
+Data is anonymized for containing only integers: one integer representing one page.
+
+the dataset is stored in the hdfs at the path /user/Andrea/logprocessor/input.seq
