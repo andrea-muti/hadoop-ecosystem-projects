@@ -12,6 +12,7 @@ import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.data.Stat;
 import org.junit.AfterClass;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
@@ -37,7 +38,8 @@ public class ZooKeeperClientTest {
 	{	
 		client = new ZooKeeperClient();
 	}
-
+	
+	@Ignore
 	@AfterClass
 	public static void deleteNodeAndcloseConnection(){
 		try {
@@ -51,6 +53,7 @@ public class ZooKeeperClientTest {
 	/**
 	 * test ZooKeeper connection
 	 */
+	@Ignore
 	@Test
 	public void test01_testConnection() {
 		try {
@@ -66,6 +69,7 @@ public class ZooKeeperClientTest {
 	/**
 	 * test creation of Znode
 	 */
+	@Ignore
 	@Test
 	public void test02_testCreateZnode() {
 
@@ -84,6 +88,7 @@ public class ZooKeeperClientTest {
 	/**
 	 * test existence of Znode on an existing znode
 	 */
+	@Ignore
 	@Test
 	public void test03_testZnodeExistsTrue() {
 		try {
@@ -99,6 +104,7 @@ public class ZooKeeperClientTest {
 	/**
 	 * test existence of Znode on a non existing znode
 	 */
+	@Ignore
 	@Test
 	public void test04_testZnodeExistsFalse() {
 		String nonExistingZnodePath = "/fakeZnode";
@@ -114,6 +120,7 @@ public class ZooKeeperClientTest {
 	/**
 	 * test getData data from existing znode
 	 */
+	@Ignore
 	@Test
 	public void test05_testGetData() {
 		try {
@@ -131,6 +138,7 @@ public class ZooKeeperClientTest {
 	/**
 	 * test testUpdate data in an existing znode
 	 */
+	@Ignore
 	@Test
 	public void test06_testUpdate() {
 		byte[] data = "this is the updated data".getBytes();
@@ -150,6 +158,7 @@ public class ZooKeeperClientTest {
 	/**
 	 * test getChildren on a znode without children
 	 */
+	@Ignore
 	@Test
 	public void test07_getChildren() {
 		try {
@@ -166,6 +175,7 @@ public class ZooKeeperClientTest {
 	/**
 	 * test getChildren on a znode with children
 	 */
+	@Ignore
 	@Test
 	public void test08_getChildrenExisting() {
 
@@ -199,6 +209,7 @@ public class ZooKeeperClientTest {
 	/**
 	 * test deleteNode
 	 */
+	@Ignore
 	@Test
 	public void test09_testDelete() {
 		try {
@@ -223,6 +234,7 @@ public class ZooKeeperClientTest {
 	/**
 	 * test DeleteNodeWithChildren
 	 */
+	@Ignore
 	@Test
 	public void test10_testDeleteNodeWithChildren() {
 		byte[] data =  "Data of the Node".getBytes(); 
@@ -251,6 +263,7 @@ public class ZooKeeperClientTest {
 		}   
 	}
 	
+	@Ignore
 	@Test
 	public void test11_test(){
 		String hbaseZnodePath = "/hbase";

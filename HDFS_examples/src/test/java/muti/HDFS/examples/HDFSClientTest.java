@@ -16,10 +16,8 @@ public class HDFSClientTest {
 	
     /**
      * Create the test case
-     *
-     * @param testName name of the test case
      */
-    public HDFSClientTest( String testName ) {
+    public HDFSClientTest() {
        
     }
 
