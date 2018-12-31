@@ -63,7 +63,7 @@ public class HBaseTest {
 			Log.info("CONNECTED");
 		} 
 		catch (IOException e) {
-			logger.equals("ERROR while creating a connection to HBase: "+e.getMessage());
+			logger.error("ERROR while creating a connection to HBase: "+e.getMessage());
 			System.exit(-1);
 		}
 	}
